@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="club.club.cheapok.entity.Player" id="pl-10">
+        <constructor-arg name="name" value="Maradonna"/>
+        <constructor-arg name="age" value="25" type="int"/>
+    </bean>
+
+    <bean class="md.asem.PlayerEater">
+        <constructor-arg ref="pl-10"/>
+    </bean>
+
+    <bean class="club.club.cheapok.entity.Player" id="pl-12">
+        <constructor-arg name="name" value="Gicu"/>
+        <constructor-arg name="age" value="25" type="int"/>
+    </bean>
+
+</beans>

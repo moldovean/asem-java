@@ -11,6 +11,11 @@ Assume the distribution of the grades follows a Normal Distribution with mean: 9
 public class HowSpecialService {
     public static void main(String[] args) {
         System.out.println(howSpecialAmI(8.5));
+        try {
+            Class.forName("whatever");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     /*
@@ -27,6 +32,7 @@ public class HowSpecialService {
 
         return probability;
     }
+
 
 
 }

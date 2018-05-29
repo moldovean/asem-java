@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="club.cheapok.entity.Player">
+    <bean class="club.club.cheapok.entity.Player">
         <constructor-arg name="name">
             <value>Maradonna</value>
         </constructor-arg>
@@ -12,7 +12,7 @@
         </constructor-arg>
     </bean>
 
-    <bean class="club.cheapok.entity.Player" name="p2">
+    <bean class="club.club.cheapok.entity.Player" name="p2">
         <constructor-arg name="name">
             <value>Gicu</value>
         </constructor-arg>

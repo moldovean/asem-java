@@ -32,7 +32,7 @@ public class Util {
 
         System.out.println("--------------getSystemClassLoader--------------------");
         System.out.println(ClassLoader.getSystemClassLoader().getResource(""));
-        System.out.println(ClassLoader.getPlatformClassLoader().getResource(""));
+//        System.out.println(ClassLoader.getPlatformClassLoader().getResource(""));
 
         System.out.println("---------- getClass---------------");
         Util util = new Util();

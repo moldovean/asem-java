@@ -2,15 +2,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--<bean id="playerRole" class="club.club.cheapok.football.entity.Player$PlayerRole">-->
+    <!--<bean id="playerRole" class="club.club.club.cheapok.football.entity.Player$PlayerRole">-->
     <!--</bean>-->
 
 
 
-    <bean id="player1" class="club.cheapok.football.entity.Player" name="player" scope="prototype">
+    <bean id="player1" class="club.club.cheapok.football.entity.Player" name="player" scope="prototype">
         <constructor-arg index="0" value="Maradonna Mihailovici"/>
         <constructor-arg index="1">
-            <value type="club.cheapok.football.entity.Player$PlayerRole">ATACKER</value>
+            <value type="club.club.cheapok.football.entity.Player$PlayerRole">ATACKER</value>
         </constructor-arg>
     </bean>
 
