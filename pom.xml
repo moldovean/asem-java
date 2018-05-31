@@ -25,6 +25,7 @@
         <module>spring-teach-4</module>
         <module>spring-mvc-teach-01</module>
         <module>lambda-sample01</module>
+        <module>javaee-01</module>
     </modules>
 
     <dependencyManagement>

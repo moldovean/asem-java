@@ -22,7 +22,6 @@ public class Iaka {
         inventory.forEach(x -> System.out.println(x));
         inventory.forEach((x) -> System.out.println(x));
         inventory.forEach((x) -> { System.out.println(x); return;});
-        Consumer
 
     }
 }
