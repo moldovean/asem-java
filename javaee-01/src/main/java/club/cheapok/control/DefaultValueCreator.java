@@ -1,6 +1,5 @@
 package club.cheapok.control;
 
-import club.cheapok.entity.Player;
 import club.cheapok.entity.enums.PlayerRole;
 
 import javax.enterprise.inject.Produces;

@@ -3,6 +3,7 @@ package club.cheapok.boundary.web;
 import club.cheapok.boundary.GameFactory;
 import club.cheapok.entity.Player;
 import club.cheapok.entity.Specification;
+import club.cheapok.entity.dao.EntryDao;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -14,6 +15,8 @@ import java.util.List;
 public class FirstPlayerAPI {
     @Inject
     public GameFactory gameFactory;
+    @Inject
+    private EntryDao entryDao;
 
     @GET
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
@@ -37,6 +40,7 @@ public class FirstPlayerAPI {
         }
         Player player = gameFactory.createPlayer(specification);
         gameFactory.addPlayer(player);
+        entryDao.saveToDb(player, specification);
 
         return Response.accepted().build();
     }
